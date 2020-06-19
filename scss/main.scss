@@ -1,7 +1,9 @@
 @import '_reset';
 @import 'config';
 @import '_mixins';
+@import '_chess';
 @import '_signup';
+@import '_carousel';
 
 /*
 body {
@@ -11,3 +13,11 @@ body {
     }
 }
 */
+
+body{
+    ::selection {
+        color:white;
+        background-color: limegreen;
+    }
+
+}
