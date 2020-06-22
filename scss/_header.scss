@@ -1,0 +1,58 @@
+header {
+    position: fixed;
+	left:0;
+	top:0;
+    width: 100%;
+    z-index: 9;
+    div {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: solid 1px white;
+        padding: 40px 0;
+        font-size: 0;
+        .left-nav {
+            display: inline-block;
+            width:70%;
+            a {
+                i {
+                }
+            }
+            ul {
+                display:inline-block;
+                li {
+                    a {
+                    }
+                }
+            }
+        }
+
+        .right-nav {
+            display: inline-block;
+            width:30%;
+            text-align: right;
+            ul {
+                li {
+                    a {
+                        i {
+                        }
+                    }
+                }
+            }
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
+
+.left-nav a,
+.left-nav ul li a,
+.right-nav ul li a {
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    color:white;
+    font-family: 'Oswald';
+}

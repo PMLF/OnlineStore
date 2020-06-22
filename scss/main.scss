@@ -1,9 +1,12 @@
 @import '_reset';
 @import 'config';
 @import '_mixins';
+@import '_header';
+@import '_hero';
 @import '_chess';
 @import '_signup';
 @import '_carousel';
+@import '_footer';
 
 /*
 body {
@@ -16,8 +19,18 @@ body {
 
 body{
     ::selection {
-        color:white;
+        color:black;
         background-color: limegreen;
     }
 
+}
+
+.wrapper {
+    width:80%;
+    max-width:1180px;
+    margin:0 auto;
+}
+
+.hide {
+    display: none;
 }

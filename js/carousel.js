@@ -1,53 +1,35 @@
 $(document).ready(function(){
   $('.carousel-images').slick({
-    slidesToShow:9,
+    slidesToShow:6,
     autoplay:true,
     arrows:false,
     responsive: [
       {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 8
-        }
-      },
-      {
-        breakpoint: 1410,
-        settings: {
-          slidesToShow: 7
-        }
-      },
-      {
-        breakpoint: 1220,
-        settings: {
-          slidesToShow: 6
-        }
-      },
-      {
-        breakpoint: 1030,
+        breakpoint: 1150,
         settings: {
           slidesToShow: 5
         }
       },
       {
-        breakpoint: 840,
+        breakpoint: 930,
         settings: {
           slidesToShow: 4
         }
       },
       {
-        breakpoint: 650,
+        breakpoint: 730,
         settings: {
           slidesToShow: 3
         }
       },
       {
-        breakpoint: 460,
+        breakpoint: 510,
         settings: {
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 270,
+        breakpoint: 300,
         settings: {
           slidesToShow: 1
         }
@@ -58,7 +40,6 @@ $(document).ready(function(){
 
 $(".carousel div .left").click(function() {
   $('.carousel-images').slick('slickPrev');
-
 });
 
 $(".carousel div .right").click(function() {

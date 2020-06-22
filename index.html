@@ -19,83 +19,144 @@
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
 	<!--Font-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
-	<!--Links-->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap">
+	<!--Icons-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
 	<!--Slick-->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+	<!--Links-->
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
+	<header>
+		<div class="wrapper">
+			<nav class="left-nav">
+				<a href="#">
+					<i class="fas fa-dragon"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="">Movies</a>
+					</li>
+					<li>
+						<a href="">Series</a>
+					</li>
+					<li>
+						<a href="">Coming soon</a>
+					</li>
+					<li>
+						<a href="">About us</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="right-nav">
+				<ul>
+					<li>
+						<a href="">Login</a>
+					</li>
+					<li>
+						<a href="">Basket (<span>0</span>)</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-search"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero">
+		<a href="#left" class="slide left"><</a>
+		<a href="#right" class="slide right">></a>
+		<div  class="wrapper">
+			<article>
+				<h1>Hazy Shade of spring</h1>
+				<h2>Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</h2>
+				<a href="#" class="btn" target="_blank">Check what's new</a>
+			</article>
+		</div>
+		<ul>
+			<li>
+				<a href="#" class="active"></a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+		</ul>
+	</section>
 
 	<section class="chess">
-		<div class="board">
+		<div class="board wrapper">
 			<div class="column">
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>PTwno</p>
 					</article>
 				</div>
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>fegre</p>
 					</article>
 				</div>
 			</div>
 			<div class="column">
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>Blisch</p>
 					</article>
 				</div>
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>ewrethry</p>
 					</article>
 				</div>
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
-					</article>
-				</div>
-			</div>
-			<div class="column">
-				<div>
-					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
-					</article>
-				</div>
-				<div>
-					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
-					</article>
-				</div>
-				<div>
-					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>cevree</p>
 					</article>
 				</div>
 			</div>
 			<div class="column">
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>defrevi</p>
 					</article>
 				</div>
 				<div>
 					<article>
-						<p>Some text, huh?</p>
-						<p>Subtext here</p>
+						<p>Lorem ipsum</p>
+						<p>uhwyrs</p>
+					</article>
+				</div>
+				<div>
+					<article>
+						<p>Lorem ipsum</p>
+						<p>vjuea</p>
+					</article>
+				</div>
+			</div>
+			<div class="column">
+				<div>
+					<article>
+						<p>Lorem ipsum</p>
+						<p>asdadwe</p>
+					</article>
+				</div>
+				<div>
+					<article>
+						<p>Lorem ipsum</p>
+						<p>buawsvj</p>
 					</article>
 				</div>
 			</div>
@@ -103,7 +164,7 @@
 	</section>
 
 	<section class="signup">
-		<div>
+		<div class="wrapper">
 			<p class="signup-title">Let us spam you!</h1>
 			<p class="signup-desc">Because who doesn't like to get notifications all the time?</p>
 			<div>
@@ -114,9 +175,8 @@
 	</section>
 
 	<section class="carousel">
-		<div>
+		<div class="wrapper">
 			<button class="left"><</button>
-			<button class="right">></button>
 			<div class="carousel-images">
 				<div>
 					<img src="https://picsum.photos/100" alt="Random LoremPicsum">
@@ -167,8 +227,44 @@
 					<img src="https://picsum.photos/115" alt="Random LoremPicsum">
 				</div>
 			  </div>
+			  <button class="right">></button>
 		</div>
 	</section>
+
+	<footer>
+		<div class="wrapper">
+			<div class="footer-section">
+				<article>
+					<a>Title</a>
+					<a>Ola</a>
+					<a>Ola</a>
+				</article>
+			</div>
+			<div class="footer-section">
+				<article>
+					<a>Title</a>
+					<a>Ola</a>
+					<a>Ola</a>
+				</article>
+			</div>
+			<div class="footer-section">
+				<article>
+					<a>Title</a>
+					<a>Ola</a>
+					<a>Ola</a>
+				</article>
+			</div>
+			<div class="footer-section">
+				<article>
+					<a>Social media</a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-linkedin-in"></i></a>
+					<a href=""><i class="fab fa-github"></i></a>
+				</article>
+			</div>
+		</div>
+	</footer>
 
 	<!--jQuery-->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -177,5 +273,6 @@
 	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"></script>-->
 	<!--Scripts-->
 	<script type="text/javascript" src="js/carousel.js"></script>
+	<script src="js/hideHeader.js"></script>
 </body>
 </html>

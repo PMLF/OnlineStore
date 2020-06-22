@@ -15,6 +15,7 @@
             width:calc(25% - 30px);
             height:100%;
             display:inline-block;
+            vertical-align: top;
             margin:0 20px;
 
             &:first-child {
@@ -38,19 +39,25 @@
                 width:100%;
                 height: calc(100%/3 - 27px);
                 border:solid 1px #000;
-                position:relative;
+                text-align: center;
 
                 &:nth-child(n+2) {
                     margin-top:40px;
                 }
 
+                &::after {
+                    content:"";
+                    display: block;
+                    background-color: red;
+                    height:100px;
+                    width:10px;
+                }
+
                 article {
                     width:90%;
                     height:50%;
-                    position:absolute;
-                    top:0;
-                    bottom:0;
-                    margin:auto 5%;
+                    margin: 0 auto;
+                    transform: translateY(50%);
 
                     p {
                         color:black;
@@ -63,9 +70,7 @@
                             margin-bottom:15px;
                         }
                     }
-                    
                 }
-
             }
         }
     }
