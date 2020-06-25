@@ -14,7 +14,9 @@ header {
             display: inline-block;
             width:70%;
             a {
-                i {
+                svg {
+                    font-size: 30px;
+                    transform: translateY(10%);
                 }
             }
             ul {
@@ -33,7 +35,7 @@ header {
             ul {
                 li {
                     a {
-                        i {
+                        svg {
                         }
                     }
                 }
