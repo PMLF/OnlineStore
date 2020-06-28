@@ -1,9 +1,15 @@
 $(document).ready(function(){
   $('.carousel-images').slick({
-    slidesToShow:6,
+    slidesToShow:7,
     autoplay:true,
     arrows:false,
     responsive: [
+      {
+        breakpoint: 1360,
+        settings: {
+          slidesToShow: 6
+        }
+      },
       {
         breakpoint: 1150,
         settings: {

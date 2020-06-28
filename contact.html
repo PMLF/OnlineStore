@@ -67,7 +67,7 @@
 		</div>
 	</header>
 
-	<section class="signup">
+	<section class="contact form">
 		<div class="wrapper">
 			<div class="breadcrumbs">
 				<ul>
@@ -79,11 +79,21 @@
 					</li>
 				</ul>
 			</div>
-			<p class="form-title">Let us type our way into your inbox!</h1>
-			<p class="form-desc">Get the latest news on all things keyboards.</p>
-			<div>
-				<input type="text" placeholder="Your e-mail">
-				<button class="key">Sign up</button>
+			<p class="form-title">Contact</h1>
+			<p class="form-desc">How may we help you?</p>
+			<div class="fields">
+				<label for="topic">Topic</label>
+				<select id="topic" name="topic">
+					<option value="lorem">Lorem</option>
+					<option value="ipsum">Ipsum</option>
+				</select>
+				<label for="name">Name</label>
+				<input id="name" type="text" placeholder="Name">
+				<label for="email">E-mail</label>
+				<input id="email" type="text" placeholder="E-mail">
+				<label for="message">Message</label>
+				<input id="message" type="text" placeholder="Message">
+				<button class="key">Send</button>
 			</div>
 		</div>
 	</section>
@@ -188,6 +198,5 @@
 	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"></script>-->
 	<!--Scripts-->
 	<script type="text/javascript" src="js/carousel.js"></script>
-	<script type="text/javascript" src="js/hideHeader.js"></script>
 </body>
 </html>

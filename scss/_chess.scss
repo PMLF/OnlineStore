@@ -35,6 +35,9 @@
                 }
             }
             div {
+                width:100%;
+                height: calc(100%/3 - 27px);
+
                 &:nth-child(n+2) {
                     margin-top:40px;
                 }

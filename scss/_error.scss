@@ -1,15 +1,62 @@
+header {
+    div {
+        border-bottom: solid 1px #333;
+    }
+}
+
+.left-nav a,
+.left-nav ul li a,
+.right-nav ul li a {
+    color:#333;
+}
+
 .error {
     height:80%;
     text-align: center;
-    background-color: #ccc;
+    background-color: #f2f2f2;
 
-    div {
+    .wrapper {
         margin: auto;
+        display: flex;
+        align-items: center;
+        height:100%;
 
         .error-container {
-            .message{
+            width:100%;
+
+            .key{
+                width:90px;
+                height:90px;
+                display: inline-block;
+                margin: 10px 5px;
+                line-height:90px;
+                font-size:50px;
+                text-transform: uppercase;
 
             }
+
+            p {
+                font-family: 'Oswald';
+                font-size: 50px;
+                text-transform: uppercase;
+                margin-bottom:20px;
+            }
+        }
+    }
+
+    img {
+        position:absolute;
+        bottom:20%;
+        right:0;
+        width:30%;
+        @include mq(0,450px) {
+            width:60%;
+        }
+        @include mq(451px,700px) {
+            width:50%;
+        }
+        @include mq(701px,1000px) {
+            width:40%;
         }
         
     }
