@@ -2,12 +2,12 @@
 .form {
     text-align: center;
     width:100%;
-    margin: 5% 0;
+    margin: 30px 0;
 
     .wrapper {
         margin:auto;
 
-        .form-title {
+        .main-title {
             text-transform: uppercase;
             color:#303030;
             font-family:"Oswald";
@@ -15,6 +15,7 @@
             font-size: 48px;
             letter-spacing:2px;
             line-height:48px;
+            display:block;
             @include mq(0, 850px) {
                 font-size:28px;
                 line-height:28px;
@@ -25,7 +26,7 @@
             }
         }
 
-        .form-desc {
+        .subtitle {
             color:#606060;
             font-style: italic;
             font-size:18px;
@@ -68,7 +69,6 @@
                 }
             }
             button {
-                width:7%;
                 display: inline-block;
                 -webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35),
                                     inset 0px -56px 109px -34px rgba(52,53,54,0.87);
@@ -82,12 +82,12 @@
                 }
             }
             * {
-                height:55px;
+                line-height:55px;
                 @include mq(0, 850px) {
-                    height:48px;
+                    line-height:48px;
                 }
                 @include mq(0, 350px) {
-                    height:40px;
+                    line-height:40px;
                 }
             }
         }

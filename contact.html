@@ -2,7 +2,7 @@
 <html lang="pt">
 <head> 
 	<meta charset="utf-8">
-	<title>Key - Your keyboard shop</title>
+	<title>Key - Contact us</title>
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no" />
 	<!--Generic meta-->
@@ -17,7 +17,7 @@
 	<meta property="og:image" content="" />
 	<!--favicon-->
 	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<link rel="icon" type="image/ico" href="images/key.png" />
 	<!--Font-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap">
 	<!--Icons-->
@@ -67,32 +67,43 @@
 		</div>
 	</header>
 
+	<section class="wrapper">
+		<div class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="">Home</a>
+				</li>
+				<li>
+					<a href="">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
 	<section class="contact form">
 		<div class="wrapper">
-			<div class="breadcrumbs">
-				<ul>
-					<li>
-						<a href="">Home</a>
-					</li>
-					<li>
-						<a href="">Contact us</a>
-					</li>
-				</ul>
-			</div>
-			<p class="form-title">Contact</h1>
-			<p class="form-desc">How may we help you?</p>
+			<p class="main-title">Contact us</p>
+			<p class="subtitle">How may we help you?</p>
 			<div class="fields">
-				<label for="topic">Topic</label>
-				<select id="topic" name="topic">
-					<option value="lorem">Lorem</option>
-					<option value="ipsum">Ipsum</option>
-				</select>
-				<label for="name">Name</label>
-				<input id="name" type="text" placeholder="Name">
-				<label for="email">E-mail</label>
-				<input id="email" type="text" placeholder="E-mail">
-				<label for="message">Message</label>
+				<div>
+					<label for="topic">Topic</label>
+					<select id="topic" name="topic">
+						<option value="lorem">Lorem</option>
+						<option value="ipsum">Ipsum</option>
+					</select>
+				</div>
+				<div>
+					<label for="name">Name</label>
+					<input id="name" type="text" placeholder="Name">
+				</div>
+				<div>
+					<label for="email">E-mail</label>
+					<input id="email" type="text" placeholder="E-mail">
+				</div>
+				<div>
+					<label for="message">Message</label>
 				<input id="message" type="text" placeholder="Message">
+				</div>
 				<button class="key">Send</button>
 			</div>
 		</div>
