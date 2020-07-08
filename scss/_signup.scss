@@ -1,94 +1,18 @@
+.signup {
 
-.form {
-    text-align: center;
-    width:100%;
-    margin: 30px 0;
 
     .wrapper {
-        margin:auto;
 
-        .main-title {
-            text-transform: uppercase;
-            color:#303030;
-            font-family:"Oswald";
-            font-weight: bold;
-            font-size: 48px;
-            letter-spacing:2px;
-            line-height:48px;
-            display:block;
-            @include mq(0, 850px) {
-                font-size:28px;
-                line-height:28px;
-            }
-            @include mq(0, 350px) {
-                font-size:22px;
-                line-height:22px;
-            }
-        }
-
-        .subtitle {
-            color:#606060;
-            font-style: italic;
-            font-size:18px;
-            letter-spacing: 1px;
-            font-family:"Oswald";
-            margin:20px 0;
-            @include mq(0, 850px) {
-                font-size:16px;
-            }
-            @include mq(0, 350px) {
-                font-size:14px;
-            }
-        }
-
+        
         .fields {
-            font-size:0;
-            margin: 40px;
-            @include mq(0, 350px) {
-                margin-top: 30px;
-            }
-            
-            input,select {
-                width:55%;
-                display: inline-block;
-                border:1px solid #000;
-                border-radius: 15px;
-                padding:0 20px;
-                font-family: 'Oswald';
-                -webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                -moz-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
 
-                &:active {                    
-                    -webkit-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                    -moz-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                    box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                }
-                @include mq(0, 350px) {
-                    width:70%;
-                }
+
+            input {
+                width:55%;
+
             }
             button {
-                display: inline-block;
-                -webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35),
-                                    inset 0px -56px 109px -34px rgba(52,53,54,0.87);
-                -moz-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35),
-                                inset 0px -56px 109px -34px rgba(52,53,54,0.87);
-                box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35),
-                            inset 0px -56px 109px -34px rgba(52,53,54,0.87);
-                
-                @include mq(0, 850px) {
-                    min-width:50px;
-                }
-            }
-            * {
-                line-height:55px;
-                @include mq(0, 850px) {
-                    line-height:48px;
-                }
-                @include mq(0, 350px) {
-                    line-height:40px;
-                }
+
             }
         }
     }

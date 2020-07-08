@@ -69,8 +69,8 @@
 
 	<section class="shopping-list form">
 		<div class="wrapper">
-			<a class="main-title">Shopping cart</a>
-			<a class="subtitle">Make them yours!</a>
+			<p class="main-title">Shopping cart</a>
+			<p class="subtitle">Make them yours!</a>
 			<div class="cart-table">
 				<div>Product</div>
 				<div>Description</div>
@@ -79,10 +79,15 @@
 				<div>Amount</div>
 				<div>Remove</div>
 				<div>
-					<img src="images/pugrammer.jpg" alt="">
+					<img src="images/corsair_k68.png" alt="">
 				</div>
-				<div>Super cool</div>
-				<div>Logitech</div>
+				<div>
+					<p>Keyboard model #1</p>
+					<p>Ref. 234523232</p>
+				</div>
+				<div>
+					<p>Logitech</p>
+				</div>
 				<div>
 					<p>1</p>
 					<div>
@@ -90,14 +95,16 @@
 						<span>-</span>
 					</div>
 				</div>
-				<div>999,99€</div>
-				<div><a>X</a></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+				<div>
+					<p>€999,99</p>
+				</div>
+				<div><a href="#">X</a></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
 			</div>
 			<div>
 
@@ -105,8 +112,79 @@
 		</div>
 	</section>
 
+	<section class="separator">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
 
+	<section class="shipping form">
+		<div class="wrapper">
+			<p class="main-title">Main</p>
+			<p class="subtitle">Subtitle</p>
+			<section class="fields">
+				<div>
+					<p>Select delivery method</p>
+					<select>
+						<option value="">Select delivery method</option>
+						<option value="a">DHL International (15.99 $)</option>
+						<option value="a">ascsdcd</option>
+						<option value="a">ascsdcd</option>
+						<option value="a">ascsdcd</option>
+					</select>
+				</div>
+				<div>
+					<p>First name</p>
+					<input type="text">
+				</div>
+				<div>
+					<p>Last name</p>
+					<input type="text">
+				</div>
+				<div>
+					<p>Address <span>(line 1)</span></p>
+					<input type="text">
+				</div>
+				<div>
+					<p>Address <span>(line 2)</span></p>
+					<input type="text">
+				</div>
+				<div>
+					<p>City</p>
+					<input type="text">
+				</div>
+				<div>
+					<p>Postal code</p>
+					<input type="text">
+				</div>
+				<div>
+					<p>Phone number</p>
+					<input type="text">
+				</div>
+				<div>
+					<p>E-mail</p>
+					<input type="text">
+				</div>
+				<div>
+					<input type="checkbox" name="use-for-billing" id="use-for-billing">
+					<p>Use this address for billing.</p>
+				</div>
+			</section>
+		</div>
+	</section>
 
+	<section class="separator">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+
+	<section class="payment">
+
+	</section>
+	
 	<footer>
 		<div class="wrapper">
 			<div class="footer-section">
@@ -148,6 +226,5 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"></script>-->
 	<!--Scripts-->
-	<script type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>
