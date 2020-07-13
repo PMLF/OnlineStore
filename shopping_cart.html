@@ -187,19 +187,22 @@
 			<p class="subtitle">Close your deal.</p>
 			<section class="fields">
 				<div class="totals">
-					<p>Sub-total: $<span>150.00</span></p>
-					<p>Shipping: $<span>12.00</span></p>
-					<p>Total: $<span>162.00</span></p>
+					<p>Sub-total: <span>150.00</span></p>
+					<p>Shipping: <span>12.00</span></p>
+					<p>Total: <span>162.00</span></p>
 				</div>
 				<div class="payment-type">
+					<p>Select payment method</p>
 					<select name="payment-card" id="payment-card">
-						<option value="" disabled selected>Select your payment method</option>
+						<option value="" disabled selected>Select payment method</option>
 						<option value="credit_card">Credit card<i class="fas fa-money-check"></i></option>
 						<option value="paypal">Paypal<i class="fab fa-cc-paypal"></i></option>
 						<option value="visa">Visa<i class="fab fa-cc-visa"></i></option>
 						<option value="bitcoin">Bitcoin<i class="fab fa-btc"></i></option>
 						<option value="ethereum">Ethereum<i class="fab fa-ethereum"></i></option>
 					</select>
+					<input type="button" value="Order now" class="key">
+					<img src="images/key.png" alt="Payment method" id="payment-type-icon">
 				</div>
 			</section>
 		</div>
