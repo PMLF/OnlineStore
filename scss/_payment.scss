@@ -1,0 +1,55 @@
+.payment {
+
+    .wrapper {
+
+
+        .fields {
+
+
+            .totals {
+                text-align: center;
+                margin:40px 0;
+
+                p {
+                    width:20%;
+                    margin:10px auto;
+                    text-align:center;
+                    text-transform: none;
+                    font-size: 20px;
+                    font-family: oswald;
+
+                    &:first-of-type {
+                        margin-top:0;
+                    }
+                    &:last-of-type {
+                        margin-bottom:0;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        font-family: oswald;
+                    }
+                }
+            }
+            .payment-type {
+                margin:20px 0;
+
+                select {
+                    width:50%;
+
+                    option {
+                        position:relative;
+
+                        i {
+                            height:80%;
+                            position:absolute;
+                            left:90%;
+                            top:50%;
+                            transform: translate(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
