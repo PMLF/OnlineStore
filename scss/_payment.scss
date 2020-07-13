@@ -1,22 +1,16 @@
 .payment {
-
     .wrapper {
-
-
         .fields {
-
-
             .totals {
                 text-align: center;
                 margin:40px 0;
-
                 p {
                     width:20%;
                     margin:10px auto;
                     text-align:center;
                     text-transform: none;
                     font-size: 20px;
-                    font-family: oswald;
+                    font-family: "Noto Sans";
                     &:first-of-type {
                         margin-top:0;
                     }
@@ -30,7 +24,7 @@
                     }
                     span {
                         font-size: 20px;
-                        font-family: oswald;
+                        font-family: "Noto Sans";
                         color:black;
                         &:before {
                             content:"$";
@@ -42,17 +36,13 @@
                 margin:20px 0;
                 padding: 0 25%;
                 position:relative;
-
                 p {
                     margin-bottom:10px;
                 }
-
                 select {
                     width:100%;
-
                     option {
                         position:relative;
-
                         i {
                             height:80%;
                             position:absolute;
@@ -69,12 +59,13 @@
                     line-height: 20px;
                     text-transform: uppercase;
                 }
-                img {
+                svg {
                     position:absolute;
-                    height:34px;
+                    font-size:26px;
                     top:32px;
                     right:30%;
-                    pointer-events: none
+                    pointer-events: none;
+                    color:#333;
                 }
             }
         }

@@ -33,11 +33,6 @@ body{
 
 }
 
-@font-face {
-    font-family: oswald;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
-}
-
 .wrapper {
     width:80%;
     max-width:1180px;
@@ -54,7 +49,7 @@ body{
     border-radius:15px;
     transition: all 0.2s ease-in-out;
     color:#F5F8FA;
-    font-family: oswald;
+    font-family: "Noto Sans";
 
     -webkit-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
                         inset 0px -56px 109px -34px rgba(52,53,54,0.87);
@@ -90,7 +85,7 @@ body{
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                font-family: oswald;
+                font-family: "Noto Sans";
                 color: #333;
             }
         }

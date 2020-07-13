@@ -149,7 +149,7 @@ header div nav ul li {
   font-weight: lighter;
   text-decoration: none;
   color: white;
-  font-family: oswald;
+  font-family: "Noto Sans";
 }
 
 .hero {
@@ -169,7 +169,7 @@ header div nav ul li {
   line-height: 120px;
   text-decoration: none;
   color: white;
-  font-family: oswald;
+  font-family: "Noto Sans";
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ header div nav ul li {
 }
 
 .hero div article * {
-  font-family: oswald;
+  font-family: "Noto Sans";
   text-transform: uppercase;
   color: white;
 }
@@ -333,7 +333,7 @@ header div nav ul li {
 .chess .board .column div article p {
   font-size: 18px;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Noto Sans";
   vertical-align: middle;
 }
 
@@ -359,7 +359,7 @@ header div nav ul li {
 .form .wrapper .main-title {
   text-transform: uppercase;
   color: #303030;
-  font-family: "Oswald";
+  font-family: "Noto Sans";
   font-weight: bold;
   font-size: 48px;
   letter-spacing: 2px;
@@ -386,7 +386,7 @@ header div nav ul li {
   font-style: italic;
   font-size: 18px;
   letter-spacing: 1px;
-  font-family: "Oswald";
+  font-family: "Noto Sans";
   margin: 20px 0;
 }
 
@@ -405,7 +405,7 @@ header div nav ul li {
 .form .wrapper .fields {
   font-size: 0;
   margin: 40px 0;
-  font-family: oswald;
+  font-family: "Noto Sans";
 }
 
 @media (min-width: 0) and (max-width: 350px) {
@@ -443,7 +443,7 @@ header div nav ul li {
   border: 1px solid #000;
   border-radius: 8px;
   padding: 0 12px;
-  font-family: oswald;
+  font-family: "Noto Sans";
   font-size: 16px;
   line-height: 20px;
   -webkit-box-shadow: 11px 11px 19px 5px rgba(52, 53, 54, 0.35);
@@ -485,7 +485,7 @@ header div nav ul li {
 }
 
 .carousel div .may-also-like {
-  font-family: oswald;
+  font-family: "Noto Sans";
   text-transform: uppercase;
   color: black;
   font-size: 24px;
@@ -534,7 +534,7 @@ footer div .footer-section {
   width: 25%;
   font-size: 18px;
   font-weight: lighter;
-  font-family: oswald;
+  font-family: "Noto Sans";
   display: inline-block;
   vertical-align: top;
 }
@@ -611,7 +611,7 @@ header div {
 }
 
 .error .wrapper .error-container p {
-  font-family: oswald;
+  font-family: "Noto Sans";
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -677,7 +677,7 @@ header div {
 
 .contact .wrapper .fields div label {
   font-size: 14px;
-  font-family: oswald;
+  font-family: "Noto Sans";
   line-height: 14px;
   margin: 0;
   height: 14px;
@@ -730,7 +730,7 @@ header div {
   height: 40px;
   width: 150px;
   margin: 0 10px;
-  font-family: oswald;
+  font-family: "Noto Sans";
   font-size: 16px;
   line-height: 40px;
   border: none;
@@ -797,7 +797,7 @@ header div {
 .brands .wrapper .brand section .product-card section p {
   font-size: 24px;
   font-weight: bold;
-  font-family: oswald;
+  font-family: "Noto Sans";
   position: relative;
   top: 14px;
 }
@@ -825,7 +825,7 @@ header div {
   color: #aaa;
   border: 2px solid #aaa;
   border-radius: 20%;
-  font-family: oswald;
+  font-family: "Noto Sans";
   font-size: 20px;
   line-height: 28px;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(52, 52, 52, 0.3);
@@ -858,7 +858,7 @@ header div {
 .shopping-list .wrapper .cart-table div {
   border: 1px solid #ccc;
   padding: 5px;
-  font-family: oswald;
+  font-family: "Noto Sans";
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -1057,7 +1057,7 @@ header div {
   text-align: center;
   text-transform: none;
   font-size: 20px;
-  font-family: oswald;
+  font-family: "Noto Sans";
 }
 
 .payment .wrapper .fields .totals p:first-of-type {
@@ -1070,7 +1070,7 @@ header div {
 
 .payment .wrapper .fields .totals p span {
   font-size: 20px;
-  font-family: oswald;
+  font-family: "Noto Sans";
 }
 
 .payment .wrapper .fields .payment-type {
@@ -1111,11 +1111,6 @@ body ::selection {
   background-color: #737A80;
 }
 
-@font-face {
-  font-family: oswald;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
-}
-
 .wrapper {
   width: 80%;
   max-width: 1180px;
@@ -1133,7 +1128,7 @@ body ::selection {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #F5F8FA;
-  font-family: oswald;
+  font-family: "Noto Sans";
   -webkit-box-shadow: 11px 11px 19px 16px rgba(52, 53, 54, 0.35), inset 0px -56px 109px -34px rgba(52, 53, 54, 0.87);
   box-shadow: 11px 11px 19px 16px rgba(52, 53, 54, 0.35), inset 0px -56px 109px -34px rgba(52, 53, 54, 0.87);
 }
@@ -1163,7 +1158,7 @@ body ::selection {
 .breadcrumbs ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: oswald;
+  font-family: "Noto Sans";
   color: #333;
 }
 
