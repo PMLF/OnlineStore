@@ -1085,7 +1085,7 @@ header div {
   position: relative;
 }
 
-.payment .wrapper .fields .payment-type select option svg {
+.payment .wrapper .fields .payment-type select option i {
   height: 80%;
   position: absolute;
   left: 90%;

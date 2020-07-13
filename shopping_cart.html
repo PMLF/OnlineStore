@@ -181,8 +181,28 @@
 		<div></div>
 	</section>
 
-	<section class="payment">
-
+	<section class="payment form">
+		<div class="wrapper">
+			<p class="main-title">Payment</p>
+			<p class="subtitle">Close your deal.</p>
+			<section class="fields">
+				<div class="totals">
+					<p>Sub-total: $<span>150.00</span></p>
+					<p>Shipping: $<span>12.00</span></p>
+					<p>Total: $<span>162.00</span></p>
+				</div>
+				<div class="payment-type">
+					<select name="payment-card" id="payment-card">
+						<option value="" disabled selected>Select your payment method</option>
+						<option value="credit_card">Credit card<i class="fas fa-money-check"></i></option>
+						<option value="paypal">Paypal<i class="fab fa-cc-paypal"></i></option>
+						<option value="visa">Visa<i class="fab fa-cc-visa"></i></option>
+						<option value="bitcoin">Bitcoin<i class="fab fa-btc"></i></option>
+						<option value="ethereum">Ethereum<i class="fab fa-ethereum"></i></option>
+					</select>
+				</div>
+			</section>
+		</div>
 	</section>
 	
 	<footer>
