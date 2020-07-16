@@ -1,5 +1,5 @@
 @import '_reset';
-@import 'config';
+@import '_config';
 @import '_mixins';
 @import '_header';
 @import '_hero';
@@ -15,6 +15,7 @@
 @import '_whitespace_separator';
 @import '_shipping-form';
 @import '_payment';
+@import '_aboutus';
 
 /*
 body {
@@ -37,6 +38,48 @@ body{
     width:80%;
     max-width:1180px;
     margin:0 auto;
+    text-align:center;
+
+    .main-title {
+        text-transform: uppercase;
+        color:#303030;
+        font-family:"Oswald";
+        font-weight: bold;
+        font-size: 48px;
+        letter-spacing:2px;
+        line-height:48px;
+        display:block;
+        @include mq(0, 850px) {
+            font-size:28px;
+            line-height:28px;
+        }
+        @include mq(0, 350px) {
+            font-size:22px;
+            line-height:22px;
+        }
+    }
+
+    .subtitle {
+        color:#606060;
+        font-style: italic;
+        font-size:18px;
+        letter-spacing: 1px;
+        font-family:"Noto Sans";
+        margin:20px 0;
+        @include mq(0, 850px) {
+            font-size:16px;
+        }
+        @include mq(0, 350px) {
+            font-size:14px;
+        }
+    }
+}
+
+.second-title {
+    font-family: 'Oswald';
+    font-size:32px;
+    text-transform: uppercase;
+    margin-bottom:20px;
 }
 
 .hide {
@@ -49,7 +92,7 @@ body{
     border-radius:15px;
     transition: all 0.2s ease-in-out;
     color:#F5F8FA;
-    font-family: "Noto Sans";
+    font-family: oswald;
 
     -webkit-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
                         inset 0px -56px 109px -34px rgba(52,53,54,0.87);
@@ -85,7 +128,7 @@ body{
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                font-family: "Noto Sans";
+                font-family: oswald;
                 color: #333;
             }
         }

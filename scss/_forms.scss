@@ -7,40 +7,6 @@
     .wrapper {
         margin:auto;
 
-        .main-title {
-            text-transform: uppercase;
-            color:#303030;
-            font-family:"Oswald";
-            font-weight: bold;
-            font-size: 48px;
-            letter-spacing:2px;
-            line-height:48px;
-            display:block;
-            @include mq(0, 850px) {
-                font-size:28px;
-                line-height:28px;
-            }
-            @include mq(0, 350px) {
-                font-size:22px;
-                line-height:22px;
-            }
-        }
-
-        .subtitle {
-            color:#606060;
-            font-style: italic;
-            font-size:18px;
-            letter-spacing: 1px;
-            font-family:"Noto Sans";
-            margin:20px 0;
-            @include mq(0, 850px) {
-                font-size:16px;
-            }
-            @include mq(0, 350px) {
-                font-size:14px;
-            }
-        }
-
         .fields {
             font-size:0;
             margin: 40px 0;
