@@ -1,10 +1,10 @@
 .hero {
+    position:relative;
     height: 80%;
     background: #3A62DB; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(left, #3A62DB, #594D75);
-    background: -o-linear-gradient(left, #3A62DB, #594D75);
-    background: linear-gradient(to right, #3A62DB, #594D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position:relative;
+    background: -webkit-linear-gradient(left, #3A62DB, #1e0655);
+    background: -o-linear-gradient(left, #3A62DB, #1e0655);
+    background: linear-gradient(to right, #3A62DB, #1e0655); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     .slide {
 		position: absolute;
@@ -42,7 +42,6 @@
             width: 50px;
 		}
 	}
-
     div {
 		height: 100%;
         max-width: 1180px;
@@ -78,9 +77,9 @@
                 font-weight: 600;
                 text-align: center;
                 text-decoration: none;
-                transition:transform 0.8s;
+                transition:transform 0.4s;
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                 }
             }
             * {
@@ -90,7 +89,6 @@
             }
         }
     }
-    
     ul {
         position:absolute;
         left:50%;
@@ -103,7 +101,6 @@
             &:last-child {
                 margin-right:0;
             }
-
             a {
                 display: block;
                 width: 25px;

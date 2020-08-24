@@ -1,18 +1,18 @@
 @import '_reset';
 @import '_config';
 @import '_mixins';
+@import '_forms';
+@import '_whitespace_separator';
 @import '_header';
+@import '_footer';
 @import '_hero';
 @import '_chess';
 @import '_signup';
-@import '_forms';
 @import '_carousel';
-@import '_footer';
 @import '_error';
 @import '_contact';
 @import '_brands_list';
 @import '_shopping_cart';
-@import '_whitespace_separator';
 @import '_shipping-form';
 @import '_payment';
 @import '_aboutus';
@@ -98,7 +98,7 @@ body{
     border-radius:15px;
     transition: all 0.2s ease-in-out;
     color:#F5F8FA;
-    font-family: oswald;
+    font-family: "Noto Sans";
 
     -webkit-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
                         inset 0px -56px 109px -34px rgba(52,53,54,0.87);

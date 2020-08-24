@@ -1,18 +1,20 @@
 .signup {
-
+    margin: 160px 0;
 
     .wrapper {
 
-        
         .fields {
-
+            margin-bottom:0;
 
             input {
                 width:55%;
-
             }
             button {
-
+                height:35px;
+                width:140px;
+                margin-left:14px;
+                font-size:16px;
+                border-radius:8px;
             }
         }
     }
