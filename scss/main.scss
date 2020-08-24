@@ -23,7 +23,7 @@
 body {
     background-color:red;
     @include mq(0,800px) {
-        background-color:rgba(200, 200, width/255,1);
+        background-color:rgba(200, 200, 255,1);
     }
 }
 */
