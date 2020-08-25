@@ -6,6 +6,9 @@
     background: -o-linear-gradient(left, #3A62DB, #1e0655);
     background: linear-gradient(to right, #3A62DB, #1e0655); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    @include mq(0,768px) {
+        height:60%;
+    }
     .slide {
 		position: absolute;
 		top:50%;
@@ -80,6 +83,10 @@
                 transition:transform 0.4s;
                 &:hover {
                     transform: scale(1.05);
+                }
+                @include mq(0,768px) {
+                    font-weight: 500;
+                    width:28%;
                 }
             }
             * {
