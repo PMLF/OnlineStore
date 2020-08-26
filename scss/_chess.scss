@@ -2,11 +2,11 @@
     height:95%;
     text-align:center;
     padding: 5%;
-    background: #bbccff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(left, #bbccff, #d2ecff);
-    background: -o-linear-gradient(left, #bbccff, #d2ecff);
-    background: linear-gradient(to right, #bbccff, #d2ecff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #dddddd; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     @include mq(0,1024px) {
         height:70%;
     }

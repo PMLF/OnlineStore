@@ -1,6 +1,11 @@
 .carousel {
-    height: 20%;
-    margin: 30px auto;
+    padding:60px 0;
+    height: 32%;
+    background: #dddddd; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
     .wrapper {
         height:100%;
@@ -51,14 +56,8 @@
             display: inline-block;
             width:calc(100% - 80px);
             height:100%;
-            div {
+            * {
                 height:100%;
-                div {
-                    height:100%;
-                    * {
-                        height:100%;
-                    }
-                }
             }
         }
     }

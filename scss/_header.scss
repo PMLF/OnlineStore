@@ -1,33 +1,48 @@
 header {
+    position:fixed;
     width: 100%;
-    background: #3A62DB; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(left, #3A62DB, #1e0655);
-    background: -o-linear-gradient(left, #3A62DB, #1e0655);
-    background: linear-gradient(to right, #3A62DB, #1e0655); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color:rgba(7, 7, 7, 0.8);
     div {
         border-bottom: solid 1px #F2F2F2;
         padding: 40px 0;
         font-size: 0;
-        @include mq(0,768px) {
+        @include mq(0,950px) {
             padding:25px 0;
         }
         .left-nav {
             width:60%;
             text-align:left;
             ul {
+                @include mq(0,950px) {
+                    //display:none;
+                    transition:display 0.2s ease;
+                }
                 li {
-                    &:nth-of-type(n + 2) {
-                        margin-left: 30px;
-                        @include mq(0,1024px) {
-                            margin-left:20px;
-                        }
-                        @include mq(0,768px) {
-                            display:none;
+                    margin-left: 30px;
+                    @include mq(0,1024px) {
+                        margin-left:20px;
+                    }
+                }
+                @include mq(0, 950px) {
+                    position:absolute;
+                    z-index:1;
+                    right:10%;
+                    top:90px;
+                    width:200px;
+                    background-color:#1e0655;
+                    border:solid 1px white;
+                    border-radius:12px;
+                    font-size:18px;
+                    padding:30px 10px;
+                    li {
+                        display:block;
+                        &:nth-of-type(n + 2){
+                            margin-top:30px;
                         }
                     }
                 }
             }
-            @include mq(0,768px) {
+            @include mq(0,950px) {
                 width:40px;
                 display:inline-block;
             }
@@ -35,7 +50,7 @@ header {
         .right-nav {
             width:40%;
             text-align: right;
-            @include mq(0,768px) {
+            @include mq(0,950px) {
                 width:calc(100% - 40px);
             }
             ul {
@@ -49,8 +64,7 @@ header {
                 }
             }
             .hamburguer {
-                display:none;
-                @include mq(0,768px) {
+                @include mq(0,950px) {
                     display:inline-block;
                     font-size:30px;
                     color:#F2F2F2;
@@ -62,14 +76,16 @@ header {
         }
         nav {
             display: inline-block;
+            img {
+                display: inline-block;
+                height:40px;
+                transform: translateY(30%);
+                margin-right:10px;
+            }
             ul {
+                display: inline-block;
                 li {
                     display: inline-block;
-                    img {
-                        height:40px;
-                        transform: translateY(30%);
-                        margin-right:10px;
-                    }
                     a {
                         font-size:18px;
                         color:#F2F2F2;
