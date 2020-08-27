@@ -8,7 +8,7 @@
     background: linear-gradient(to right, #dddddd, #a0a0a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     @include mq(0,1024px) {
-        height:70%;
+        height:80%;
     }
     .board {
         width:100%;
@@ -18,9 +18,12 @@
         grid-gap: 20px;
 
         .tile {
-            padding:20px;
+            padding:0px 20px;
             text-align: center;
 
+            @include mq(0, 1440px) {
+                padding:64px 20px;
+            }
             &:first-of-type {
                 grid-row-start: 1;
                 grid-row-end: 3;
@@ -29,12 +32,11 @@
                 grid-row-start: 2;
                 grid-row-end: 4;
                 grid-column-start: 4;
-                
             }
             article {
                 width:90%;
+                max-height:80%;
                 margin: 0 auto;
-                transform:translateY(80%);
 
                 p {
                     font-size: 18px;
@@ -43,6 +45,7 @@
                     vertical-align: middle;
                     &:first-child {
                         font-size: 24px;
+                        line-height:28px;
                         margin-bottom:15px;
                     }
                 }
@@ -50,6 +53,15 @@
                     margin-top:15px;
                     font-size:36px;
                 }
+                img {
+                    width:60%;
+                }
+            }
+        }
+        .tall-tile {
+            padding:196px 20px;
+            @include mq(0, 1024px) {
+                padding:120px 20px;
             }
         }
     }

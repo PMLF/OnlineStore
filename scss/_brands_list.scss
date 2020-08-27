@@ -1,19 +1,27 @@
 .brands {
-
+    background: #dddddd; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     .wrapper {
-
 
         .brand {
             width:100%;
             font-size: 0;
             margin-top:100px;
+            @include mq(0,1024px) {
+                margin-top:60px;
+            }
 
             &:nth-of-type(1) {
                 margin-top:0;
             }
             &:last-of-type {
-                margin-bottom:80px;
+                margin-bottom:50px;
+                @include mq(0,1024px) {
+                    margin-bottom:0;
+                }
             }
             .main-title {
                 margin-bottom:10px;
@@ -51,8 +59,12 @@
 
             section {
                 margin:50px 0;
+                @include mq(0,1024px) {
+                    margin:30px 0;
+                }
 
                 .product-card {
+                    background-color: #F2F2F2;
                     width:calc(25% - 20px);
                     display:inline-block;
                     height:50vh;
@@ -61,6 +73,9 @@
                     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.34);
                     -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.34);
                     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.34);
+                    @include mq(0,1024px) {
+                        height:40vh;
+                    }
                     img {
                         height:80%;
                         min-width:100%;
@@ -80,7 +95,8 @@
                         margin:0;
                         position: relative;
                         z-index:1;
-                        background-color: #fff;
+                        background-color: #F2F2F2;
+                        border-top:solid 1px #070707;
 
                         p {
                             font-size:24px;
@@ -112,7 +128,7 @@
                     margin:5px;
                     display:inline-block;
 
-                    background-color: #fff;
+                    background-color: #F2F2F2;
                     color:#aaa;
                     border: 2px solid #aaa;
                     border-radius:20%;

@@ -1,0 +1,43 @@
+.breadcrumbs {
+    text-align:center;
+    background: #dddddd; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top:123px;
+    padding: 40px;
+
+    @include mq(0,1024px) {
+        margin-top:93px;
+    }
+    @include mq(0,768px) {
+        margin-top:106px;
+    }
+    @include mq(0,425px) {
+        margin-top:91px;
+    }
+
+    .wrapper {
+        text-align: left;
+        height:18px;
+    
+        ul {
+            list-style:none;
+            li {
+                display: inline;
+                font-size: 18px;
+        
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: oswald;
+                    color: #333;
+                }
+            }
+            li+li:before {
+                color: black;
+                content: "/\00a0";
+            }
+        }
+    }
+}

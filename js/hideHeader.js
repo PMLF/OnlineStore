@@ -1,24 +1,22 @@
-
-/**
- * Checks whether to hide the header when the user scrolls or not.
- */
-window.onscroll = function() {
-    hideHeader();
-};
-
-/**
- * Checks whether to hide the header when the file is ready or not.
- */
-$(document).ready(hideHeader());
-
-/**
- * Keeps track of the user's scrolling activity to hide or show header.
- */
 function hideHeader() {
-    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.querySelector("header").classList.add("hide");
-    }
-    else {
-        document.querySelector("header").classList.remove("hide");
-    }
+    document.querySelector("header").classList.add("hide");
 }
+
+function showHeader() {
+    document.querySelector("header").classList.remove("hide");
+}
+
+/**
+ * The code below was taken from Stack Overflow and adapted for this use case.
+ * https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
+ */
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop && (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)){
+       hideHeader();
+   } else {
+       showHeader();
+   }
+   lastScrollTop = st;
+});
