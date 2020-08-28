@@ -23,6 +23,9 @@
 
                 p {
                     margin-bottom:8px;
+                    @include mq(0, 425px) {
+                        font-size:14px;
+                    }
                 }
                 select {
                     width:100%;
@@ -36,16 +39,26 @@
                     
                 }
                 &:last-of-type {
+                    width:100%;
                     input[type=checkbox] {
                         display: inline-block;
                         width:20px;
                         height:20px;
                         margin:3px;
+                        @include mq(0, 425px) {
+                            width:14px;
+                            height:14px;
+                        }
                     }
                     p {
                         display: inline-block;
-                        margin:0 0 0 10px;
+                        margin-left:10px;
                         line-height:26px;
+                        @include mq(0, 425px) {
+                            margin-right:0;
+                            font-size:12px;
+                            line-height:14px;
+                        }
                     }
                 }
             }

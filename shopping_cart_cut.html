@@ -34,12 +34,10 @@
 	<header>
 		<div class="wrapper">
 			<nav class="left-nav">
-				<a href="#">
-					<i class="fas fa-keyboard"></i>
-				</a>
+				<img src="images/key.png" alt="Key logo">
 				<ul>
 					<li>
-						<a href="">Brands</a>
+						<a href="404.html">Brands</a>
 					</li>
 					<li>
 						<a href="">On sale</a>
@@ -48,11 +46,21 @@
 						<a href="">New arrivals</a>
 					</li>
 					<li>
-						<a href="">About us</a>
+						<a href="contact.html">Contact us</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="right-nav">
+				<ul class="hamburguer hide">
+					<li>
+						<i class="fas fa-bars"></i>
+					</li>
+				</ul>
+				<ul class="personal hide">
+					<li>
+						<i class="fas fa-user"></i>
+					</li>
+				</ul>
 				<ul>
 					<li>
 						<a href="">Login</a>
@@ -61,7 +69,7 @@
 						<a href="">Basket (<span>0</span>)</a>
 					</li>
 					<li>
-						<a href=""><i class="fas fa-search"></i></a>
+						<a href=""><i class="fas fa-search"></i>Search</a>
 					</li>
 				</ul>
 			</nav>
@@ -83,7 +91,7 @@
 					<img src="images/corsair_k68.png" alt="">
 				</div>
 				<div>
-					<p>Keyboard model #1</p>
+					<p>Keyboard Model A</p>
 					<p>Ref. 234523232</p>
 				</div>
 				<div>
@@ -97,22 +105,36 @@
 					</div>
 				</div>
 				<div>
-					<p>€999,99</p>
+					<p>€ 99,99</p>
+				</div>
+				<div><a href="#">X</a></div><div>
+					<img src="images/corsair_k68.png" alt="">
+				</div>
+				<div>
+					<p>Keyboard Model B</p>
+					<p>Ref. 853655234</p>
+				</div>
+				<div>
+					<p>Microsoft</p>
+				</div>
+				<div>
+					<p>2</p>
+					<div>
+						<span>+</span>
+						<span>-</span>
+					</div>
+				</div>
+				<div>
+					<p>€ 99,99</p>
 				</div>
 				<div><a href="#">X</a></div>
-				<div><p></p></div>
-				<div><p></p></div>
-				<div><p></p></div>
-				<div><p></p></div>
-				<div><p></p></div>
-				<div><p></p></div>
 			</div>
 			<div class="subtotal">
-				<article>Subtotal: <span>999.99</span></article>
+				<article>Subtotal: <span>199.98</span></article>
 			</div>
 			<section class="next-action-cart">
 				<a href="">Continue shopping</a>
-				<input class="key" id="order-now" type="button" value="Order now" />
+				<input class="key order-now" type="button" value="Order now" />
 			</section>
 		</div>
 	</section>
@@ -121,32 +143,38 @@
 		<div class="wrapper">
 			<div class="footer-section">
 				<article>
-					<a>Title</a>
-					<a>Ola</a>
-					<a>Ola</a>
+					<p>Title</p>
+					<a class="foot-link">Ola</a>
+					<a class="foot-link">Ola</a>
 				</article>
 			</div>
 			<div class="footer-section">
 				<article>
-					<a>Title</a>
-					<a>Ola</a>
-					<a>Ola</a>
+					<p>Title</p>
+					<a class="foot-link">Ola</a>
+					<a class="foot-link">Ola</a>
 				</article>
 			</div>
 			<div class="footer-section">
 				<article>
-					<a>Title</a>
-					<a>Ola</a>
-					<a>Ola</a>
+					<p>Title</p>
+					<a class="foot-link">Ola</a>
+					<a class="foot-link">Ola</a>
 				</article>
 			</div>
 			<div class="footer-section">
 				<article>
-					<a>Social media</a>
-					<a href=""><i class="fab fa-instagram"></i></a>
-					<a href=""><i class="fab fa-facebook"></i></a>
-					<a href=""><i class="fab fa-linkedin-in"></i></a>
-					<a href=""><i class="fab fa-github"></i></a>
+					<p>Social media</p>
+					<div class="social">
+						<article class="social-group">
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-facebook"></i></a>
+						</article>
+						<article class="social-group">
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+							<a href=""><i class="fab fa-github"></i></a>
+						</article>
+					</div>
 				</article>
 			</div>
 		</div>
@@ -158,5 +186,6 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"></script>-->
 	<!--Scripts-->
+	<script type="text/javascript" src="js/hideHeader.js"></script>
 </body>
 </html>

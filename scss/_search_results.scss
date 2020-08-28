@@ -24,8 +24,8 @@
             &:last-of-type {
 
 
-                &:before {
-                    content:'$';
+                &:after {
+                    content:' €';
                 }
             }
         }

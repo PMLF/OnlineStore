@@ -46,16 +46,16 @@
                 font-family: "Noto Sans";
                 font-size:16px;
                 line-height:20px;
-                -webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                -moz-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                &:active {                    
-                    -webkit-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                    -moz-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                    box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                }
-                @include mq(0, 350px) {
-                    width:70%;
+                //-webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
+                //-moz-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
+                //box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
+                //&:active {                    
+                //    -webkit-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
+                //    -moz-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
+                //    box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
+                //}
+                @include mq(0, 425px) {
+                    font-size:14px;
                 }
             }
             button {
@@ -67,7 +67,7 @@
                 box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35),
                             inset 0px -56px 109px -34px rgba(52,53,54,0.87);
                 
-                @include mq(0, 850px) {
+                @include mq(0, 1024px) {
                     min-width:50px;
                 }
             }

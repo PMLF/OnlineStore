@@ -1,47 +1,83 @@
 .shopping-list {
+    margin-top:123px;
+    margin-bottom:140px;
+    @include mq(0,1024px) {
+        margin-top:93px;
+    }
+    @include mq(0,768px) {
+        margin-top:106px;
+    }
+    @include mq(0,425px) {
+        margin-top:91px;
+    }
 
     .wrapper {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin:30px auto;
 
         .cart-table {
             display: grid;
-            grid-template-columns: 15% auto 15% 80px 100px 80px;
+            grid-template-columns: 15% auto 15% 140px 140px 80px;
             overflow: hidden;
+            @include mq(0,1024px) {
+                grid-template-columns: 15% auto 18% 100px 100px 70px;
+            }
+            @include mq(0,768px) {
+                grid-template-columns: 15% auto 100px 100px 70px;
+                div {
+                    &:nth-of-type(6n + 3) {
+                        display:none;
+                    }
+                }
+            }
+            @include mq(0,425px) {
+                grid-template-columns: auto 80px 70px 30px;
+                div {
+                    &:nth-of-type(6n + 1) {
+                        display:none;
+                    }
+                }
+            }
 
             div {
                 border: 1px solid #ccc;
                 padding:5px;
                 font-family: "Noto Sans";
                 font-size:20px;
-                //background-color:#F2F2F2;
+                background-color:#F2F2F2;
                 text-transform: uppercase;
 
-                &:nth-of-type(-n+6) { //table header
+                @include mq(0, 425px) {
+                    font-size:14px;
+                }
+                &:nth-of-type(-n+6) { //Table header
                     border:none;
                     text-transform: uppercase;
                     text-align: left;
                     font-size: 16px;
                     line-height:20px;
-                    color:#aaa;
+                    color:#070707;
+                    background-color: transparent;
+                    @include mq(0, 425px) {
+                        font-size:14px;
+                    }
                 }
-                &:nth-of-type(n + 7) { //table cells
+                &:nth-of-type(n + 7) { //Table cells
                     padding:40px 5px;
                     height:100px;
                 }
                 &:nth-of-type(6n+1):nth-of-type(n + 7) { //'Product' column
                     padding:5px;
-                    background-color: transparent;
                     overflow:hidden;
                     img {
                         height:90px;
                         position:relative;
-                        z-index: -1;
-                        //cortar largura se exceder container
                     }
                 }
                 &:nth-of-type(6n+2):nth-of-type(n + 7) { //'Description' column
                     padding:30px 5px;
+                    @include mq(0, 425px) {
+                        padding:20px 5px;
+                    }
                     p {
                         display:block;
                         width:100%;
@@ -65,6 +101,9 @@
                         line-height:90px;
                         margin-right:10px;
                         vertical-align:top;
+                        @include mq(0, 425px) {
+                            font-size:14px;
+                        }
                     }
                     div {
                         display: inline-block;
@@ -109,10 +148,17 @@
                 font-family: "Noto Sans";
                 font-size:16px;
                 line-height: 50px;
+                @include mq(0, 425px) {
+                    font-size:12px;
+                    margin-right:20px;
+                }
                 span {
                     font-size:20px;
-                    &::before {
-                        content:'$';
+                    @include mq(0, 425px) {
+                        font-size:14px;
+                    }
+                    &::after {
+                        content:' €';
                     }
                 }
             }
@@ -128,8 +174,11 @@
                 font-family: 'Noto Sans';
                 line-height:60px;
                 text-decoration: underline;
+                @include mq(0, 425px) {
+                    font-size:12px;
+                }
             }
-            #order-now {
+            .order-now {
                 border-radius: 15px;
                 position:absolute;
                 right:0;
@@ -138,6 +187,11 @@
                 font-size:16px;
                 font-family: 'Noto Sans';
                 text-transform: uppercase;
+                @include mq(0, 425px) {
+                    font-size:14px;
+                    height:60px;
+                    width:120px;
+                }
             }
         }
     }

@@ -11,9 +11,9 @@
 @import '_carousel';
 @import '_error';
 @import '_contact';
-@import '_brands_list';
+@import '_cards_list';
 @import '_shopping_cart';
-@import '_shipping-form';
+@import '_shipping_form';
 @import '_payment';
 @import '_aboutus';
 @import '_no_products';
@@ -61,6 +61,10 @@ body{
             font-size:32px;
             line-height:36px;
         }
+        @include mq(0,425px) {
+            font-size:26px;
+            line-height:28px;
+        }
 
         span {
             font-weight: normal;
@@ -101,7 +105,6 @@ body{
     transition: all 0.2s ease-in-out;
     color:#F5F8FA;
     font-family: "Noto Sans";
-
     -webkit-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
                         inset 0px -56px 109px -34px rgba(52,53,54,0.87);
     -moz-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
@@ -111,7 +114,6 @@ body{
 
     &:hover {
         transform: scale(0.98);
-        
         -webkit-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35),
                             inset 0px -56px 109px -34px rgba(52,53,54,0.87);
         -moz-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35),

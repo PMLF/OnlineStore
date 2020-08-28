@@ -22,11 +22,14 @@
             li {
                 display: inline;
                 font-size: 18px;
-        
+                
+                @include mq(0,425px) {
+                    font-size:14px;
+                }        
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-family: oswald;
+                    font-family: 'Oswald';
                     color: #333;
                 }
             }
