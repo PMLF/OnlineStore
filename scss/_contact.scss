@@ -1,5 +1,9 @@
 .contact {
     margin:0;
+    background: #dddddd;
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0);
 
     .wrapper {
         text-align:center;
@@ -13,6 +17,9 @@
             width:60%;
             text-align: left;
             font-size:0;
+            @include mq(0,768px) {
+                width:100%;
+            }
 
             div {
                 width:100%;
@@ -52,7 +59,9 @@
             }
             button {
                 width:100%;
+                font-size:20px;
                 line-height:50px;
+                text-transform:uppercase;
             }
         }
     }
