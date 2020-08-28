@@ -31,6 +31,10 @@ body {
 */
 
 body{
+    background: #dddddd;
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0);
     ::selection {
         color:white;
         background-color: #737A80;

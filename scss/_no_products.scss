@@ -1,22 +1,25 @@
 .no-products {
     width:100%;
     min-height:100px;
-    padding:100px 0;
+    padding:30px 0;
     border-bottom:solid 1px #ccc;
 
-    p {
-        font-size:18px;
-        font-family: 'Noto Sans';
-        margin-bottom:16px;
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-        a {
-            color:#0080C9;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
+    section {
+        p {
+            font-size:18px;
+            line-height:24px;
+            font-family: 'Noto Sans';
+            margin-bottom:16px;
+    
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            a {
+                color:#0080C9;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
