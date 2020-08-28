@@ -76,6 +76,12 @@
                     @include mq(0,1024px) {
                         height:40vh;
                     }
+                    @include mq(0,768px) {
+                        width:calc(50% - 20px);
+                    }
+                    @include mq(0,425px) {
+                        height:30vh;
+                    }
                     img {
                         height:80%;
                         min-width:100%;
@@ -89,6 +95,9 @@
                         &:hover {
                             transform:scale(1.1) translateX(-50%);
                         }
+                        @include mq(0,425px) {
+                            height:70%;
+                        }
                     }
                     section {
                         height:20%;
@@ -97,6 +106,9 @@
                         z-index:1;
                         background-color: #F2F2F2;
                         border-top:solid 1px #070707;
+                        @include mq(0,425px) {
+                            height:30%;
+                        }
 
                         p {
                             font-size:24px;
