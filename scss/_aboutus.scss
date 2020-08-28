@@ -1,4 +1,8 @@
 .about {
+    background: #dddddd;
+    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
+    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
+    background: linear-gradient(to right, #dddddd, #a0a0a0);
 
     .wrapper {
         font-size:0;
@@ -10,16 +14,21 @@
             margin:40px 0;
         }
         section {
-            margin:30px 0;
+            padding:30px 0;
             text-align: left;
+            font-size:0;
             div {
                 width:50%;
                 display: inline-block;
                 font-size:18px;
                 font-family: 'Noto Sans';
                 padding-right:20px;
+                vertical-align: top;
 
                 p {
+                    @include mq(0,425px) {
+                        font-size:16px;
+                    }
                     &:nth-of-type(n + 2) {
                         margin-top:10px;
                     }
