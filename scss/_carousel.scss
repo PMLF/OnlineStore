@@ -8,9 +8,9 @@
         text-align: center;
 
         .may-also-like {
-            font-family: "Noto Sans";
+            font-family:$main-font;
             text-transform: uppercase;
-            color:303030;
+            color:$titles;
             font-size: 24px;
             margin:10px auto;
             @include mq(0, 425px) {
@@ -21,14 +21,14 @@
         .img-display {
             height:85%;
             border-radius:12px;
-            -webkit-box-shadow: 6px 7px 10px 1px rgba(0,0,0,0.41);
-            -moz-box-shadow: 6px 7px 10px 1px rgba(0,0,0,0.41);
-            box-shadow: 6px 7px 10px 1px rgba(0,0,0,0.41);
+            -webkit-box-shadow: 6px 7px 10px 1px rgba($dark,0.41);
+            -moz-box-shadow: 6px 7px 10px 1px rgba($dark,0.41);
+            box-shadow: 6px 7px 10px 1px rgba($dark,0.41);
 
             button {
                 height:100%;
                 width:40px;
-                background-color:#737A80;
+                background-color:$key-color;
                 color:white;
                 border:none;
                 font-size:50px;

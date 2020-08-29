@@ -41,9 +41,9 @@
             div {
                 border: 1px solid #ccc;
                 padding:5px;
-                font-family: "Noto Sans";
+                font-family:$main-font;
                 font-size:20px;
-                background-color:#F2F2F2;
+                background-color:$white;
                 text-transform: uppercase;
 
                 @include mq(0, 425px) {
@@ -55,7 +55,7 @@
                     text-align: left;
                     font-size: 16px;
                     line-height:20px;
-                    color:#070707;
+                    color:$dark;
                     background-color: transparent;
                     @include mq(0, 425px) {
                         font-size:14px;
@@ -110,8 +110,8 @@
                         padding:28px 0;
                         span {
                             display:block;
-                            color:white;
-                            background-color:black;
+                            color:$white;
+                            background-color:$dark;
                             height:16px;
                             width:16px;
                             font-size:18px;
@@ -145,7 +145,7 @@
                 min-width:80px;
                 float:right;
                 margin-right:80px;
-                font-family: "Noto Sans";
+                font-family:$main-font;
                 font-size:16px;
                 line-height: 50px;
                 @include mq(0, 425px) {
@@ -170,8 +170,8 @@
             .continue-shopping {
                 position:absolute;
                 left:0;
-                color:black;
-                font-family: 'Noto Sans';
+                color:$dark;
+                font-family: $main-font;
                 line-height:60px;
                 text-decoration: underline;
                 @include mq(0, 425px) {
@@ -186,7 +186,7 @@
                     height:60px;
                     width:150px;
                     font-size:16px;
-                    font-family: 'Noto Sans';
+                    font-family:$main-font;
                     text-transform: uppercase;
                     @include mq(0, 425px) {
                         font-size:14px;

@@ -21,23 +21,14 @@
 @import '_details';
 @import '_breadcrumbs';
 
-/*
-body {
-    background-color:red;
-    @include mq(0,800px) {
-        background-color:rgba(200, 200, 255,1);
-    }
-}
-*/
-
 body{
-    background: #dddddd;
-    background: -webkit-linear-gradient(left, #dddddd, #a0a0a0);
-    background: -o-linear-gradient(left, #dddddd, #a0a0a0);
-    background: linear-gradient(to right, #dddddd, #a0a0a0);
+    background: $background-light;
+    background: -webkit-linear-gradient(left, $background-light, $background-dark);
+    background: -o-linear-gradient(left, $background-light, $background-dark);
+    background: linear-gradient(to right, $background-light, $background-dark);
     ::selection {
         color:white;
-        background-color: #737A80;
+        background-color: $titles;
     }
 
 }
@@ -50,8 +41,8 @@ body{
 
     .main-title {
         text-transform: uppercase;
-        color:#303030;
-        font-family:"Oswald";
+        color:$titles;
+        font-family:$title-font;
         font-weight: bold;
         font-size: 48px;
         letter-spacing:2px;
@@ -73,11 +64,11 @@ body{
     }
 
     .subtitle {
-        color:#606060;
+        color:$subtitles;
         font-style: italic;
         font-size:18px;
         letter-spacing: 1px;
-        font-family:"Noto Sans";
+        font-family:$main-font;
         margin:20px 0;
         text-decoration: none;
         @include mq(0, 768px) {
@@ -87,7 +78,7 @@ body{
 }
 
 .second-title {
-    font-family: 'Oswald';
+    font-family: $title-font;
     font-size:32px;
     text-transform: uppercase;
     margin-bottom:20px;
@@ -101,12 +92,12 @@ body{
 }
 
 .key {
-    background-color: #737A80;
+    background-color: $key-color;
     text-align: center;
     border-radius:15px;
     transition: all 0.2s ease-in-out;
-    color:#F2F2F2;
-    font-family: "Noto Sans";
+    color:$white;
+    font-family:$main-font;
     -webkit-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
                         inset 0px -56px 109px -34px rgba(52,53,54,0.87);
     -moz-box-shadow: 11px 11px 19px 16px rgba(52,53,54,0.35),
