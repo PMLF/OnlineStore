@@ -46,14 +46,6 @@
                 font-family: "Noto Sans";
                 font-size:16px;
                 line-height:20px;
-                //-webkit-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                //-moz-box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                //box-shadow: 11px 11px 19px 5px rgba(52,53,54,0.35);
-                //&:active {                    
-                //    -webkit-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                //    -moz-box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                //    box-shadow: 11px 11px 19px -5px rgba(52,53,54,0.35);
-                //}
                 @include mq(0, 425px) {
                     font-size:14px;
                 }
